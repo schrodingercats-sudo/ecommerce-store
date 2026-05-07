@@ -49,7 +49,7 @@ export function Header() {
               <button className="text-neutral-700 hover:text-black flex items-center gap-2">
                 <UserIcon size={20} />
               </button>
-              <div className="absolute right-0 top-full mt-2 w-56 bg-white border border-neutral-100 shadow-xl rounded-md p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+              <div className="absolute right-0 top-full mt-2 w-56 bg-white border border-neutral-100 shadow-xl rounded-md p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
                 <p className="text-sm font-medium">{user.name}</p>
                 <p className="text-xs text-neutral-500 mb-3">{user.email}</p>
                 <Link to="/orders" className="block py-1.5 text-sm hover:text-amber-700">My Orders</Link>
