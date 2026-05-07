@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --color-cream: #f3eee6;
+  --color-cream-dark: #e8e2d5;
+  --color-ink: #0e0e0e;
+}
+
+html, body, #root {
+  height: 100%;
+  background: #ffffff;
+  color: #0e0e0e;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* hide scrollbar for swatch rows */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* simple fade */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.fade-up { animation: fadeUp .4s ease both; }
